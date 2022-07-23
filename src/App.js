@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import ConfirmDelete from "./hooks/useConfirm";
+import PreventLeave from "./hooks/usePreventLeave";
 
 function App() {
   return (
@@ -8,17 +9,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <ConfirmDelete />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <br />
+        <PreventLeave />
+        <br />
       </header>
     </div>
   );
