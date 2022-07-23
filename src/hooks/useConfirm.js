@@ -1,11 +1,15 @@
-const useConfirm = (message = "", callback, rejection) => {
-  if (typeof callback !== "function") {
+const useConfirm = (message = "", onConfirm, onCancel) => {
+  if (!onConfirm || typeof onConfirm !== "function") {
+    return;
+  }
+  if (!onCancel && typeof onCancel !== "function") {
     return;
   }
   const confirmAction = () => {
     if (window.confirm(message)) {
-      callback();
-    } else rejection(message);
+      //eslint-disable-line
+      onConfirm();
+    } else onCancel(message);
   };
   return confirmAction;
 };
