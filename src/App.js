@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ConfirmDelete from "./hooks/useConfirm";
-import PreventLeave from "./hooks/usePreventLeave";
-
+import ConfirmDelete from "./hooks/useEffect/useConfirm";
+import PreventLeave from "./hooks/useEffect/usePreventLeave";
+// import BeforeLeave from "./hooks/useEffect/useBeforeLeave";
 function App() {
   return (
     <div className="App">
@@ -12,6 +12,8 @@ function App() {
         <br />
         <PreventLeave />
         <br />
+        {/* <BeforeLeave />
+        <br /> */}
       </header>
     </div>
   );
