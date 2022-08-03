@@ -6,6 +6,7 @@ import PreventLeave from "./hooks/useEffect/usePreventLeave";
 import FadeInStuff from "./hooks/useEffect/useFadeIn";
 import UseNetwork from "./hooks/useEffect/useNetwork";
 import UseScroll from "./hooks/useEffect/UseScroll";
+import UseFullScreen from "./hooks/useEffect/UseFullScreen";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <UseScroll />
         <br />
         <FadeInStuff />
+        <br />
+        <UseFullScreen />
       </header>
     </div>
   );
