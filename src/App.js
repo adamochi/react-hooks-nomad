@@ -7,6 +7,7 @@ import FadeInStuff from "./hooks/useEffect/useFadeIn";
 import UseNetwork from "./hooks/useEffect/useNetwork";
 import UseScroll from "./hooks/useEffect/UseScroll";
 import UseFullScreen from "./hooks/useEffect/UseFullScreen";
+import UseNotify from "./hooks/useEffect/UseNotify";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <UseNetwork />
       </div>
       <header className="App-header">
+        <UseNotify />
         <img src={logo} className="App-logo" alt="logo" />
         <ConfirmDelete />
         <br />
@@ -25,6 +27,7 @@ function App() {
         <FadeInStuff />
         <br />
         <UseFullScreen />
+        <br />
       </header>
     </div>
   );
