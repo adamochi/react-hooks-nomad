@@ -19,9 +19,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 1000vh;
 }
 
 .App-link {
@@ -35,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+.statusbar {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+.statusbar h1 {
+  margin: 0;
+  font-size: 12px;
 }
