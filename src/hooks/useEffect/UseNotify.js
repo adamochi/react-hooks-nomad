@@ -1,23 +1,32 @@
 import React from "react";
-function notifyMe() {
+
+function notifyMe(title, options) {
   if (!("Notification" in window)) {
-    alert("This browser does not support desktop notification");
-  } else if (Notification.permission === "granted") {
-    let notification = new Notification("Hi there!");
-  } else if (Notification.permission !== "denied") {
-    Notification.requestPermission().then(function (permission) {
-      if (permission === "granted") {
-        let notification = new Notification("Hi there!");
-      }
-    });
+    return;
   }
+  const fireNotify = () => {
+    if ("Notification" in window !== "granted") {
+      Notification.requestPermission().then((permission) => {
+        if (permission === "granted") {
+          new Notification(title, options);
+        } else {
+          return;
+        }
+      });
+    } else {
+      new Notification(title, options);
+    }
+  };
+  return fireNotify;
 }
 
 const UseNotify = () => {
-  const noti = notifyMe();
+  const fuck = "Can I steal your kimchi?";
+  const horny = "I love kimchi";
+  const triggerNotify = notifyMe(fuck, { body: horny });
   return (
     <div>
-      <button onClick={noti}>Notify me!</button>
+      <button onClick={triggerNotify}>Notify me!</button>
     </div>
   );
 };

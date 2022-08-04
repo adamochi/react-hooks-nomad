@@ -1,0 +1,20 @@
+.count-div {
+  display: flex;
+  h3 {
+    width: 70px;
+    margin: 0;
+  }
+  .countBtn {
+    font-size: 14px;
+    font-weight: 600;
+    word-spacing: 1px;
+    background-color: antiquewhite;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    &:active {
+      box-shadow: 0 0 4px 0 rgb(110, 63, 185);
+      color: rgb(29, 36, 54);
+    }
+  }
+}
