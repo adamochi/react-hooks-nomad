@@ -36,5 +36,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "A collection of react hooks from a course at nomadcoders.co",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamochi/react-hooks-nomad.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "title"
+  ],
+  "author": "Adam Sullivan, Nomad Coders Course",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamochi/react-hooks-nomad/issues"
+  },
+  "homepage": "https://github.com/adamochi/react-hooks-nomad#readme"
 }
