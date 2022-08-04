@@ -9,11 +9,14 @@ import UseScroll from "./hooks/useEffect/UseScroll";
 import UseFullScreen from "./hooks/useEffect/UseFullScreen";
 import UseNotify from "./hooks/useEffect/UseNotify";
 import Button from "./someelements/Button";
+import UseAxios from "./hooks/useaxios/UseAxios";
+
 function App() {
   return (
     <div className="App">
       <div className="statusbar">
         <UseNetwork />
+        <UseAxios />
       </div>
       <header className="App-header">
         <UseNotify />
